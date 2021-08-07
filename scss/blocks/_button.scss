@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+}
+
+.button-people {
+  margin-left: 20px;
+  margin-right: 38px;
+}
+
+.button-karzinka {
+  position: relative;
+
+  &::before {
+    content: '4';
+    position: absolute;
+    padding: 0 0 0 3px;
+    font-size: 15px;
+    width: 17px;
+    top: 14px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 17px;
+    color: $white-cl;
+    background-color: rgb(229,  112, 75);
+    border-radius: 50%;
+  }
+}
+
+
+@media only screen and (min-width: 850px) {
+  .button-people {
+    margin-left: 20px;
+    margin-right: 38px;
+  }
+}

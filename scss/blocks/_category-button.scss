@@ -1,0 +1,32 @@
+.category-button{
+  font-family: $main-font;
+  width: 194px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: $main-color;
+  background-color: $lightGrey-cl;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 13px 21px 13px 16px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../img/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-left: 13px;
+  }
+
+  &:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+

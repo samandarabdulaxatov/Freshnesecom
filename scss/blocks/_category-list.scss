@@ -1,0 +1,33 @@
+.category-list{
+  @include list-unstyled;
+  margin-bottom: 48px;
+}
+
+.category-item:not(:last-child){
+  margin-bottom: 12px;
+}
+
+.category-link{
+  font-size: 14px;
+  line-height: 19px;
+  color: $green-cl;
+  transition: opacity 0.2s ease;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .category-list{
+    margin-bottom: 20px;
+  }
+
+  .category-link{
+    font-size: 17px;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}

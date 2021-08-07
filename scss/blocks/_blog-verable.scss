@@ -1,0 +1,122 @@
+.blog-vegitable{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.blog-vegitable__img{
+  max-width: 269px;
+}
+
+.blog-vegitable__span{
+  font-family: $main-font;
+  width: 80px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green-cl;
+  background-color: $lightGrey-cl;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.blog-vegitable__title{
+  font-family: $main-font;
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $main-color;
+  margin-bottom: 16px;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.blog-vegitable__author{
+  font-size: 12px;
+  line-height: 16px;
+  color: $main-color;
+}
+
+.blog-vegitable__time{
+  font-size: 12px;
+  line-height: 16px;
+  color: $main-color;
+}
+
+
+@media only screen and (max-width: 1150px) {
+  .blog-vegitable{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-vegitable__img{
+    min-width: 400px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .blog-vegitable{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .blog-vegitable__span{
+    display: none;
+  }
+
+  .blog-vegitable__img{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .blog-vegitable{
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .blog-vegitable{
+    min-width: 269px;
+  }
+
+  .blog-vegitable__img{
+    min-width: 269px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .blog-vegitable{
+    min-width: 269px;
+    flex-grow: 1;
+    margin-bottom: 100px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .blog-vegitable__img{
+    min-width: 269px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-vegitable__span{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,154 @@
+.categories{
+  padding-top: 80px;
+}
+
+.categories__title{
+  font-family: $main-font;
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $main-color;
+  margin-bottom: 16px;
+}
+
+.categories__list{
+  @include list-unstyled;
+}
+
+.categories__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child){
+    margin-bottom: 12px;
+  }
+}
+
+.categories__link{
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $main-color;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.categories__amount{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green-cl;
+  background-color: $lightGrey-cl;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 10px;
+}
+
+.filter{
+  margin-top: 48px;
+}
+
+.filter__list{
+  @include list-unstyled;
+}
+
+.filter__title{
+  font-family: $main-font;
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $main-color;
+  margin-bottom: 18px;
+}
+
+.filter__item{
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child){
+    margin-bottom: 16px;
+  }
+}
+
+.filter__text{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $main-color;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/checkbox-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: 1.5px solid #D1D1D1;
+    margin-right: 10px;
+  }
+}
+
+.filter__input:checked ~ .filter__text::before{
+  background-color: $green-cl;
+  border-color: $green-cl;
+}
+
+.rating{
+  padding-top: 50px;
+}
+
+.rating__title{
+  font-family: $main-font;
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $main-color;
+  margin-bottom: 18px;
+}
+
+.rating__list{
+  @include list-unstyled;
+}
+
+.rating__item:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.rating__span{
+  display: flex;
+  align-items: center;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/checkbox-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: 1.5px solid #D1D1D1;
+    margin-right: 10px;
+  }
+}
+
+.rating__input:checked ~ .rating__span::before{
+  background-color: $green-cl;
+  border-color: $green-cl;
+}

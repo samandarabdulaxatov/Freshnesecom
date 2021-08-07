@@ -1,0 +1,19 @@
+.search-form {
+  // min-width: 222px;
+  border: none;
+  background-color: $lightGrey-cl;
+  padding: 5px;
+  margin-left: 52px;
+  display: flex;
+}
+
+.search-img {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .search-logo {
+    display: block;
+  }
+}

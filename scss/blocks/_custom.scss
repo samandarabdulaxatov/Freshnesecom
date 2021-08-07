@@ -1,0 +1,12 @@
+.custom-select {
+  min-width: 88px;
+  position: relative;
+  font-family: $secondary-font;
+  border: none;
+  background-color: $lightGrey-cl;
+  cursor: pointer;
+}
+
+.select-selected {
+  background-color: rgb(62, 231, 243);
+}

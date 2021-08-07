@@ -1,0 +1,45 @@
+.applied{
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.applied__text{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey-cl;
+  margin: 0;
+  margin-right: 12px;
+}
+
+.applied__green{
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green-cl;
+  background-color: $lightGrey-cl;
+  border-radius: 12px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../../img/ic-actions-close-simple.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 4px;
+  }
+
+  &:not(:last-child){
+    margin-right: 12px;
+  }
+}

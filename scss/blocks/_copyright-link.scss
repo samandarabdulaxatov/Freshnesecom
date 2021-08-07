@@ -1,0 +1,23 @@
+.copyright-link__wrapper{
+  text-align: left;
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+
+.copyright-link{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: $main-color;
+  transition: opacity 0.3s ease;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .copyright-link__wrapper{
+    text-align: center;
+  }
+}

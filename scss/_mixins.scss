@@ -1,0 +1,27 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin list-flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin title-unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin bg-full {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

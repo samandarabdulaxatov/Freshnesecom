@@ -1,0 +1,79 @@
+.price{
+  padding-top: 50px;
+}
+
+.price__title{
+  font-family: $main-font;
+  @include title-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $main-color;
+  margin-bottom: 16px;
+}
+
+.price-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.price__label{
+  font-family: $main-font;
+  font-weight: 600;
+  max-width: 109px;
+  font-size: 12px;
+  line-height: 18px;
+  color: $main-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.label__max{
+  margin-left: 33px;
+}
+
+.price-wrapper__input{
+  display: inline-block;
+  padding: 11px 16px 11px 21px;
+  max-width: 109px;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+
+.form-button__apply{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  margin-right: 34px;
+  color: $white-cl;
+  background-color: $green-cl;
+  border: 2px solid $green-cl;
+  border-radius: 12px;
+  padding: 12px 16px;
+  transition: background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: $green-cl;
+  }
+}
+
+.form-button__reset{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: $grey-cl;
+  border: none;
+  background-color: $white-cl;
+  border-radius: 12px;
+  padding: 6px 12px;
+  transition: opacity 0.2s ease;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
