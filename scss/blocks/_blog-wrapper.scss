@@ -50,7 +50,7 @@
 .blog-wrapper__chef {
   height: 400px;
   border-radius: 12px;
-  background-image: url(../../img/egg.jpg);
+  background-image: url('../../img/egg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -93,11 +93,11 @@
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url(../../img/avatar-author.svg);
+    background-image: url('../../img/avatar-author.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-right: 8px;
+    margin-right: 50px;
   }
 }
 
